@@ -1,0 +1,12 @@
+@ IN SOA  @dominio@. admin.@dominio@. (
+                                1          ; serial
+                                604800     ; refresh (1 week)
+                                86400      ; retry (1 day)
+                                2419200    ; expire (4 weeks)
+                                604800     ; minimum (1 week)
+                                )
+@ IN                    NS      servidor.admin.com.
+servidor                A       172.22.201.53
+ftp                     CNAME   servidor
+www                     CNAME   servidor
+mysql                   CNAME   servidor
